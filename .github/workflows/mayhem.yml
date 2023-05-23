@@ -1,5 +1,7 @@
 name: Mayhem
 on:
+  push:
+  pull_request:
   workflow_dispatch:
 
 env:
@@ -66,7 +68,7 @@ jobs:
         uses: ForAllSecure/mcode-action@v1
         with:
           mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
-          args: --image ${{ needs.build.outputs.image }} --file ${{ matrix.mayhemfile }} 
+          args: --image ${{ needs.build.outputs.image }} --file ${{ matrix.mayhemfile }} --duration 1200
           sarif-output: sarif
           
       - name: Upload SARIF file(s)
