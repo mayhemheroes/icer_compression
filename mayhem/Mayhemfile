@@ -8,10 +8,10 @@ tasks:
   - name: regression_testing
   - name: coverage_analysis
 cmds:
-  - cmd: ./compress @@
+  - cmd: /compress @@
     env: {}
     cwd: /icer_compression/build/
-    filepath: ../boat.512.bmp
+    filepath: boat.512.bmp
 
 
  
