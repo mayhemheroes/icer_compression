@@ -12,6 +12,7 @@ cmds:
     env: {}
     cwd: /icer_compression/build/
     filepath: boat.512.bmp
+    max_length: 4096
 
 
  
