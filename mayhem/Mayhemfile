@@ -1,16 +1,4 @@
-image: ghcr.io/vnagubandi25/icer_compression:latest
-duration: 1200
-project: vnagubandi25/icer_compression
-target: compress_color
-tasks:
-  - name: exploitability_factors
-  - name: behavior_testing
-  - name: regression_testing
-  - name: coverage_analysis
-cmds:
-  - cmd: /compress @@
-    env: {}
-image: ghcr.io/vnagubandi25/icer_compression:latest
+image: ghcr.io/vnagubandi25/icer_compression:master
 duration: 1200
 project: vnagubandi25/icer_compression
 target: compress_color
@@ -25,8 +13,8 @@ cmds:
     cwd: /icer_compression/build/
     filepath: boat.512.bmp
     max_length: 4096
-    filepath: boat.512.bmp
-    max_length: 4096
+
+
 
 
  
